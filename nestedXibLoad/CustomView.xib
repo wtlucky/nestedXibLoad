@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView">
+            <connections>
+                <outlet property="imageView" destination="QaN-nb-33f" id="YOD-s9-O28"/>
+                <outlet property="label" destination="252-EP-lli" id="b3q-49-9ix"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QaN-nb-33f">
+                    <rect key="frame" x="0.0" y="0.0" width="271" height="148"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="252-EP-lli">
+                    <rect key="frame" x="113" y="156" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QaN-nb-33f" secondAttribute="bottom" constant="40" id="IYj-WK-sY7"/>
+                <constraint firstItem="252-EP-lli" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="113" id="MPw-hj-ODf"/>
+                <constraint firstItem="QaN-nb-33f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TKl-Gm-7vU"/>
+                <constraint firstAttribute="bottom" secondItem="252-EP-lli" secondAttribute="bottom" constant="11" id="lCH-bl-iti"/>
+                <constraint firstItem="QaN-nb-33f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qdF-qU-5gq"/>
+                <constraint firstAttribute="trailing" secondItem="QaN-nb-33f" secondAttribute="trailing" id="spd-yd-yfJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="189.5" y="211"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple.jpg" width="1440" height="900"/>
+    </resources>
+</document>
