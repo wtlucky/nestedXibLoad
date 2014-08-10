@@ -19,6 +19,7 @@
     return self;
 }
 
+/* solution 2.1 */
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder]) {
@@ -36,13 +37,38 @@
     NSLog(@"awakFromNib");
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
+/* solution 2.2 */
+//- (id) awakeAfterUsingCoder:(NSCoder*)aDecoder {
+//    BOOL isJustAPlaceholder = ([[self subviews] count] == 0);
+//    if (isJustAPlaceholder) {
+//        CustomView* theRealThing = [[self class] getClassObjectFromNib];
+//        
+//        theRealThing.frame = self.frame;    // ... (pass through selected properties)
+//        
+//        // Update 2013-07-23: make compatible with Auto Layout
+//        self.translatesAutoresizingMaskIntoConstraints = NO;
+//        theRealThing.translatesAutoresizingMaskIntoConstraints = NO;
+//        
+//        // convince ARC that we're legit -- Update 2013-03-10: unnecessary since at least Xcode 4.5
+//        CFRelease((__bridge const void*)self);
+//        CFRetain((__bridge const void*)theRealThing);
+//        
+//        return theRealThing;
+//    }
+//    return self;
+//}
+//
+//+ (id)getClassObjectFromNib
+//{
+//    NSString *nibName = NSStringFromClass([self class]);
+//    NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil];
+//    for (id anObject in topLevelObjects) {
+//        if ([anObject isKindOfClass:self.class]) {
+//            return anObject;
+//        }
+//    }
+//    
+//    return nil;
+//}
 
 @end

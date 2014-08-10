@@ -6,8 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView">
             <connections>
-                <outlet property="imageView" destination="QaN-nb-33f" id="YOD-s9-O28"/>
-                <outlet property="label" destination="252-EP-lli" id="b3q-49-9ix"/>
+                <outlet property="imageView" destination="QaN-nb-33f" id="kon-8B-i1V"/>
+                <outlet property="label" destination="252-EP-lli" id="Q9O-PX-iOR"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

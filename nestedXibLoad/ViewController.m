@@ -30,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+/* solution 1 */
 //    self.customView.center = self.view.center;
 //    [self.view addSubview:self.customView];
 }
